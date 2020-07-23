@@ -26,6 +26,8 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 - Install node-sass
 - Changed files css extension to scss
 
+- Add file reset.scss that reset styles
+
 ### Fixed
 
 ### Removed
