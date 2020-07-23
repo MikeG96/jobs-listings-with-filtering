@@ -6,9 +6,9 @@ function App() {
   const filters = ['Frontend', 'CSS'];
 
   return (
-    <>
+    <div className='container'>
       <Filter filters={filters} />
-    </>
+    </div>
   );
 }
 
