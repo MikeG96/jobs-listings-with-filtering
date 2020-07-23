@@ -23,6 +23,9 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 
 ### Added
 
+- Install node-sass
+- Changed files css extension to scss
+
 ### Fixed
 
 ### Removed
