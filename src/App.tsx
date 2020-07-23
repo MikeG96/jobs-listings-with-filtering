@@ -1,8 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './App.scss';
+import Filter from './components/Filter/Filter';
 
 function App() {
-  return <Fragment></Fragment>;
+  const filters = ['Frontend', 'CSS'];
+
+  return (
+    <>
+      <Filter filters={filters} />
+    </>
+  );
 }
 
 export default App;
