@@ -1,1 +1,6 @@
 @import 'assets/styles/reset.scss';
+@import 'assets/styles/colors.scss';
+
+html, body {
+  background: $aqua-spring;
+}
