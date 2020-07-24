@@ -3,7 +3,19 @@ import './App.scss';
 import Filter from './components/Filter/Filter';
 
 function App() {
-  const filters = ['Frontend', 'CSS'];
+  const filters: string[] = [
+    'Frontend',
+    'CSS',
+    'JavaScript',
+    'Frontend',
+    'JavaScript',
+    'Frontend',
+    'JavaScript',
+    'Frontend',
+    'JavaScript',
+    'Frontend',
+    'JavaScript',
+  ];
 
   return (
     <div className='container'>
