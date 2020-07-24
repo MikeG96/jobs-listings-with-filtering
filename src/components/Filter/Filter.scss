@@ -108,3 +108,11 @@ section.filter {
     }
   }
 }
+
+@media (max-width: $tablet-breakpoint) {
+  section.filter {
+    div.filter-container {
+      padding: 1.25em 1.188em;
+    }
+  }
+}
