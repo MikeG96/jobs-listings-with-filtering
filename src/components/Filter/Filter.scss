@@ -1,66 +1,109 @@
+@import '~assets/styles/utilities.scss';
+@import '~assets/styles/colors.scss';
+
 section.filter {
   width: 100%;
 
-  background: #ffffff;
+  background: $white;
 
-  box-shadow: 0em 0.938em 1.188em rgba(13, 113, 130, 0.15);
+  box-shadow: 0em 0.938em 1.188em
+    scale-color($color: $surfie-green, $lightness: 95%);
 
   border-radius: 5px;
 
-  padding: 1.188em 2em;
-
   position: relative;
 
-  ul {
-    list-style: none;
-
-    margin: 0;
-    padding: 0;
+  div.filter-container {
+    padding: 0.688em 2em;
 
     display: flex;
 
-    li {
-      margin: 0 0.5em;
-
-      background: rgba($color: #5ca5a5, $alpha: 0.1);
-
-      border-radius: 4px;
-
-      mix-blend-mode: normal;
+    ul {
+      list-style: none;
 
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
 
-      height: 100%;
-      min-height: 2em;
-      max-height: 2em;
+      li {
+        margin: 0.5em;
 
-      span {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 0.813rem;
+        background: scale-color($color: $breaker-bay, $lightness: 90%);
 
-        line-height: 1.5rem;
+        border-radius: 4px;
 
-        letter-spacing: -0.006rem;
+        mix-blend-mode: normal;
 
-        color: #5ca5a5;
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+        min-height: 2em;
+        max-height: 2em;
+
+        p {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 0.813rem;
+
+          line-height: 1.5rem;
+
+          letter-spacing: -0.006rem;
+
+          color: $breaker-bay;
+
+          margin: 0 1.3em -0.3em 0.5em;
+
+          cursor: default;
+
+          @include user-select-none;
+        }
+
+        button {
+          width: 100%;
+          max-width: 2em;
+          min-width: 2em;
+
+          height: 2em;
+
+          border: none;
+          border-radius: 0px 4px 4px 0px;
+
+          background: $breaker-bay;
+
+          display: flex;
+          align-items: flex-end;
+
+          &:hover {
+            background: $outer-space;
+          }
+
+          span {
+            font-size: 1.5rem;
+            color: $white;
+          }
+        }
       }
+    }
 
-      button {
+    button.clear {
+      margin-left: 2.5em;
 
-        width: 100%;
-        max-width: 2em;
-        min-width: 2em;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.813em;
 
-        border: none;
-        border-radius: 0px 4px 4px 0px;
+      line-height: 1.5em;
+      letter-spacing: -0.063em;
 
-        background: #5CA5A5;
-        color: #fff;
+      text-decoration-line: underline;
 
-        font-size: 1.5rem;
+      color: $blue-smoke;
+
+      background: none;
+      border: none;
+
+      &:hover {
+        color: $breaker-bay;
       }
     }
   }
