@@ -26,7 +26,7 @@ section.filter {
       li {
         margin: 0.5em;
 
-        background: scale-color($color: $breaker-bay, $lightness: 90%);
+        background: $tag-background-color;
 
         border-radius: 4px;
 
