@@ -1,1 +1,10 @@
-@import 'assets/styles/reset.scss';
+@import '~assets/styles/reset.scss';
+@import '~assets/styles/colors.scss';
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+html, body {
+  background: $main-background-color;
+}

@@ -28,9 +28,20 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 
 - Add file reset.scss that reset styles
 
+- Add `colors.scss` file
+- Add typescript rules
+- Add baseUrl in `tsconfig.jon`
+- Install axios
+- Add default document styles
+- Add mock filters selected
+- Add tablet breakpoint variable
+- Add `utilities.scss` file
+
 ### Fixed
 
 ### Removed
+
+- Remove default React App styles
 
 [`unreleased`]:
   https://github.com/MikeG96/jobs-listings-with-filtering/-/compare/master...development
