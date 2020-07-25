@@ -6,8 +6,7 @@ section.filter {
 
   background: $white;
 
-  box-shadow: 0em 0.938em 1.188em
-    scale-color($color: $surfie-green, $lightness: 95%);
+  box-shadow: 0em 0.938em 1.188em $simple-box-shadow-color;
 
   border-radius: 5px;
 
