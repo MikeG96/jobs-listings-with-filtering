@@ -1,7 +1,8 @@
 import React from 'react';
+import { FilterProps } from './Filter.model';
 import './Filter.scss';
 
-const Filter = ({ filters }: { filters: string[] }) => {
+const Filter = ({ filters }: FilterProps) => {
   return (
     <section className='filter'>
       <div className='filter-container'>
@@ -15,7 +16,9 @@ const Filter = ({ filters }: { filters: string[] }) => {
             </li>
           ))}
         </ul>
-        <button type='button' className="clear">Clear</button>
+        <button type='button' className='clear'>
+          Clear
+        </button>
       </div>
     </section>
   );
