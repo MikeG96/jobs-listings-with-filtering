@@ -40,6 +40,8 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 - Add jest configuration
 - Add filter component test
 
+- Add `.travis.yml` for CI
+
 ### Fixed
 
 - Update app test
