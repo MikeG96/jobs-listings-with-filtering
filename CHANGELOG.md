@@ -37,7 +37,12 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 - Add tablet breakpoint variable
 - Add `utilities.scss` file
 
+- Add jest configuration
+- Add filter component test
+
 ### Fixed
+
+- Update app test
 
 ### Removed
 
