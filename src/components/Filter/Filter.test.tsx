@@ -3,7 +3,7 @@ import React from 'react';
 import Filter from './Filter';
 
 describe('Filter component', () => {
-  it('Should be show filter component', () => {
+  it('should be created', () => {
     const filters: string[] = ['CSS', 'Frontend'];
 
     const filter = render(<Filter filters={filters} />);
