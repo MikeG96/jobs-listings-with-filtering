@@ -3,9 +3,6 @@ import { FilterProps } from './Filter.model';
 import './Filter.scss';
 
 const Filter = ({ filters }: FilterProps) => {
-  if (!filters || !filters.length) {
-    return null;
-  }
   return (
     <section className='filter'>
       <div className='filter-container'>

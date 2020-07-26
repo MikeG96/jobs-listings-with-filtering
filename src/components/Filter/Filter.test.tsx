@@ -10,12 +10,4 @@ describe('Filter component', () => {
 
     expect(filter).toBeTruthy();
   });
-
-  it('Should be empty filter component', () => {
-    const filters: string[] = [];
-
-    const filter = render(<Filter filters={filters} />);
-
-    expect(filter.container.innerHTML).toBe('');
-  });
 });

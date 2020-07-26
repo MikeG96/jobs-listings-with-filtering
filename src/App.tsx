@@ -18,9 +18,7 @@ function App() {
   ];
 
   return (
-    <div className='container'>
-      <Filter filters={filters} />
-    </div>
+    <div className='container'>{filters && <Filter filters={filters} />}</div>
   );
 }
 
