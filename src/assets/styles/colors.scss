@@ -17,6 +17,7 @@ $tag-background-color: scale-color(
 );
 
 $primary-text-color: $breaker-bay;
+$secondary-text-color: $outer-space;
 
 $button-background-color: $breaker-bay;
 $button-background-hover-color: $outer-space;
@@ -24,3 +25,9 @@ $button-text-color: $white;
 $button-without-background-text-color: $blue-smoke;
 
 $primary-background-color: $white;
+
+$highlight-box-shadow-color: scale-color(
+  $color: $surfie-green,
+  $lightness: 95%,
+);
+
