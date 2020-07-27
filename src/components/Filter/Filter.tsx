@@ -1,6 +1,9 @@
 import React from 'react';
-import { FilterProps } from './Filter.model';
 import './Filter.scss';
+
+export class FilterProps {
+  filters: string[];
+}
 
 const Filter = ({ filters }: FilterProps) => {
   return (
