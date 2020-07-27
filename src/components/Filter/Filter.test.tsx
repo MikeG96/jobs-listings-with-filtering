@@ -1,10 +1,14 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import Filter from './Filter';
+import Filter, { FilterProps } from './Filter';
 
 describe('Filter component', () => {
   it('should be created', () => {
-    const filters: string[] = ['CSS', 'Frontend'];
+    const props: FilterProps = {
+      filters: ['CSS', 'Frontend'] 
+    }
+
+    const { filters} = props;
 
     const filter = render(<Filter filters={filters} />);
 
