@@ -14,7 +14,7 @@ const JobOffer = () => {
         <div className='enterprise-highlight'>
           <h2>Eyecam Co.</h2>
         </div>
-        <h1 className='job-position'>Full Stack Eginner</h1>
+        <h1>Full Stack Eginner</h1>
         <div className='job-offer-details'>
           <ul>
             <li>2w ago</li>
