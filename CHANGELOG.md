@@ -42,6 +42,9 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 
 - Add `.travis.yml` for CI
 
+- Add `env.example` file
+- Add `http.service` axios intance
+
 ### Fixed
 
 - Update app test
