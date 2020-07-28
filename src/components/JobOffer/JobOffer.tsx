@@ -23,6 +23,13 @@ const JobOffer = () => {
           </ul>
         </div>
       </div>
+      <div className='job-offer-tags'>
+        <button type='button'>Frontend</button>
+        <button type='button'>Senior</button>
+        <button type='button'>JavaScript</button>
+        <button type='button'>CSS</button>
+        <button type='button'>HTML</button>
+      </div>
     </section>
   );
 };

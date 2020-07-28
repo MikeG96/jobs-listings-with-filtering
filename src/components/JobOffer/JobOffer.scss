@@ -26,6 +26,8 @@ section.job-offer-container {
     &.enterprise-description {
       margin-left: 1.5em;
 
+      width: 27.5em;
+
       div.enterprise-highlight {
         margin-bottom: 0.75em;
 
@@ -70,6 +72,47 @@ section.job-offer-container {
               margin: 0 1.5em;
             }
           }
+        }
+      }
+    }
+
+    &.job-offer-tags {
+      width: calc(100% - 33em);
+
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      button {
+        background: $tag-background-color;
+
+        border: none;
+        border-radius: 4px;
+
+        mix-blend-mode: normal;
+
+        min-height: 2em;
+        max-height: 2em;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.813rem;
+
+        line-height: 1.5rem;
+
+        letter-spacing: -0.006rem;
+
+        color: $primary-text-color;
+
+        cursor: pointer;
+
+        padding-right: 1.313em;
+        margin: 0.5em;
+
+        &:hover {
+          background: $button-background-color;
+
+          color: $button-text-color;
         }
       }
     }
