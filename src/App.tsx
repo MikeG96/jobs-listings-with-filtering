@@ -1,7 +1,7 @@
+import Filter from 'components/Filter/Filter';
 import JobOffer from 'components/JobOffer/JobOffer';
 import React from 'react';
 import './App.scss';
-import Filter from './components/Filter/Filter';
 
 function App() {
   const filters: string[] = [
