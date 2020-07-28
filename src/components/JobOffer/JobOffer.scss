@@ -1,0 +1,196 @@
+@import '~assets/styles/colors.scss';
+@import '~assets/styles/utilities.scss';
+
+section.job-offer-container {
+  background: $primary-background-color;
+
+  border-left: 5px solid transparent;
+  border-radius: 5px;
+
+  padding: 2em 2.5em;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1.5em;
+
+  box-shadow: 0px 0.938em 1.25em $highlight-box-shadow-color;
+
+  &.is-featured {
+    box-shadow: none;
+
+    border-left: 5px solid $secondary-background-color;
+  }
+
+  div {
+    &.enterprise-logo {
+      width: 5.5em;
+      height: 5.5em;
+
+      border-radius: 50%;
+
+      overflow: hidden;
+    }
+
+    &.enterprise-description {
+      margin-left: 1.5em;
+
+      width: 27.5em;
+
+      div.enterprise-highlight {
+        margin-bottom: 0.75em;
+
+        display: flex;
+        align-items: center;
+
+        h2 {
+          color: $primary-text-color;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 0.875em;
+
+          margin-right: 1.563em;
+
+          @include user-select-none;
+        }
+
+        span {
+          margin: 0 0.25em;
+          padding: 0.375em 0.75em 0.15em;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 0.688em;
+
+          text-align: center;
+          text-transform: uppercase;
+          border-radius: 12px;
+
+          color: $button-text-color;
+
+          @include user-select-none;
+          &.new {
+            background: $button-background-color;
+          }
+
+          &.featured {
+            background: $button-background-hover-color;
+
+            padding-right: 1.125em;
+          }
+        }
+      }
+
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.125em;
+
+        color: $secondary-text-color;
+
+        margin-bottom: 0.5em;
+
+        @include user-select-none;
+      }
+
+      div.job-offer-details {
+        ul {
+          li {
+            display: inline-block;
+
+            color: $tertiary-text-color;
+
+            font-size: 0.938em;
+            font-style: normal;
+            font-weight: 500;
+
+            @include user-select-none;
+
+            &:not(:last-child)::after {
+              content: '•';
+              margin: 0 1.5em;
+            }
+          }
+        }
+      }
+    }
+
+    &.job-offer-tags {
+      width: calc(100% - 33em);
+
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      button {
+        background: $tag-background-color;
+
+        border: none;
+        border-radius: 4px;
+
+        mix-blend-mode: normal;
+
+        min-height: 2em;
+        max-height: 2em;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.813rem;
+
+        letter-spacing: -0.006rem;
+
+        color: $primary-text-color;
+
+        cursor: pointer;
+
+        padding-right: 1.313em;
+        margin: 0.5em;
+
+        &:hover, &:focus {
+          background: $button-background-color;
+
+          color: $button-text-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  section.job-offer-container {
+    flex-wrap: wrap;
+
+    position: relative;
+
+    padding: 2em 1em 1em;
+
+    margin-top: 3.5em;
+    margin-bottom: 5em;
+
+    div {
+      &.enterprise-logo {
+        position: absolute;
+        top: -3em;
+      }
+
+      &.enterprise-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 2em;
+        margin-left: 0.5em;
+        margin-bottom: 1.5em;
+      }
+
+      &.job-offer-tags {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        border-top: 1px solid $separator-color;
+
+        padding-top: 1em;
+      }
+    }
+  }
+}

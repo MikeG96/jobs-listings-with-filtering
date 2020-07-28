@@ -4,6 +4,7 @@ $surfie-green: #0d7182;
 $breaker-bay: #5ca5a5;
 $blue-smoke: #7c8f8f;
 $outer-space: #2b3939;
+$submarine: #b7c4c4;
 
 $main-background-color: $aqua-spring;
 $simple-box-shadow-color: scale-color(
@@ -17,6 +18,8 @@ $tag-background-color: scale-color(
 );
 
 $primary-text-color: $breaker-bay;
+$secondary-text-color: $outer-space;
+$tertiary-text-color: $blue-smoke;
 
 $button-background-color: $breaker-bay;
 $button-background-hover-color: $outer-space;
@@ -24,3 +27,11 @@ $button-text-color: $white;
 $button-without-background-text-color: $blue-smoke;
 
 $primary-background-color: $white;
+$secondary-background-color: $breaker-bay;
+
+$highlight-box-shadow-color: rgba(
+  $color: $surfie-green,
+  $alpha: 0.15,
+);
+
+$separator-color: $submarine;
