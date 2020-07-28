@@ -27,7 +27,7 @@ $button-without-background-text-color: $blue-smoke;
 
 $primary-background-color: $white;
 
-$highlight-box-shadow-color: scale-color(
+$highlight-box-shadow-color: rgba(
   $color: $surfie-green,
-  $lightness: 95%,
+  $alpha: 0.15,
 );
