@@ -45,6 +45,8 @@ Please check https://keepachangelog.com/en/1.0.0/#how
 - Add `env.example` file
 - Add `http.service` axios intance
 
+- Add `JobOffer` component with design responsive and desktop
+
 ### Fixed
 
 - Update app test
